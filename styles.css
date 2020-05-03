@@ -1,37 +1,32 @@
 * {
-    
     margin: 0;
     padding: 0;
   }
   
 body {
-    
     font-family: 'Roboto Slab', serif;
     height: 100vh;
     line-height: 1.6;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
   
-.container {
+.containerz {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* CSS Smooth Scroll */
-    overflow-y: scroll; 
+    /* overflow-y: scroll; 
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory; */
 }
-  
-.lead {
-    font-size: 1.5rem;
-}
-  
+
 .navbar {
     position: fixed;
+    text-align: center;
     top: 0;
     z-index: 1;
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 50px;
     background: rgba(0,0,0,0.7);
 }
   
@@ -43,8 +38,8 @@ body {
 }
   
 .navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem;
+    margin: 0 .2rem;
+    padding: .8rem;
 }
   
 .navbar ul li a {
@@ -70,12 +65,12 @@ section {
     /* scroll-snap-align: center; */
 }
 
-h3{
+h2{
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
-#intro{
+#intro, .lead {
     font-size: 1.2rem;
 }
   
@@ -83,13 +78,17 @@ section h1 {
     font-size: 4rem;
 }
 
-#linkedin, #github, #resume{
+#linkedin, #github, #resume {
     width: 5vh;
     height: 5vh;
     margin: 1em;
 }
 
-.logos{
+p {
+    margin: 1em;
+}
+
+.logos {
     display: inline;
 }
   
