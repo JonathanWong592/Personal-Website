@@ -111,6 +111,8 @@ section#projects{
 section#contact {
     background-color: white;
 }
+
+
   
 
 /* Project Section */
@@ -123,7 +125,8 @@ section#contact {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 1100px;
+    width: 100%;
+    /* width: 1100px; */
 }
 
 .container .cards{
@@ -139,15 +142,16 @@ section#contact {
 .container .cards .inner-card{
     color: red;
     position: relative;
-    width: calc(50% - 40px);
+    /* width: calc(50% - 40px); */
+    width: 100%;
     margin: 0 30px 30px 0;
-    padding: 0 25px;
-    height: 140px;
+    /* padding: 0 20px; */
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border-radius: 4ox;
+    border-radius: 4px;
     transition: .5s;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
@@ -157,7 +161,8 @@ section#contact {
 }
 
 .container .cards .inner-card .project-name{
-    max-width: 100%;
+    /* max-width: 100%; */
+    font-size: 2.5vw;
     filter: grayscale(1);
     transition: .5s;
     transform: scale(0.8);
@@ -178,7 +183,7 @@ section#contact {
 .content .inner-content{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 30vh;
     display: flex;
     align-items: center;
     transition: 0.5s;
@@ -192,7 +197,54 @@ section#contact {
     transition-delay: 0.2s
 }
 
-.content .inner-content h2{
-    font-size: 3em;
+.content .inner-content .text .proj-header{
+    font-size: 2.5vw;
+    width: 30vw;
+    height: 20vh;
 }
+
+.content .inner-content .text .proj-desc{
+    font-size: 1vw;
+}
+
+/* Responsive columns */
+/* @media screen and (max-width: 1000px) {
+    .container .cards .inner-card .project-name{
+        font-size: 3.5vw;
+    }
+    .content .inner-content .text .proj-header{
+        height: 5vh;
+        font-size: 4.5vw;
+    }
+
+    .content .inner-content .text .proj-desc{
+        font-size: 4vw;
+    }
+} */
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .container .cards .inner-card .project-name{
+        font-size: 5.5vw;
+    }
+
+    .content .inner-content{
+        font-size: 10vw;
+        width: 30vw;
+        height: 100%;
+        /* height: 20vh; */
+    }
+    .content .inner-content .text .proj-header{
+        font-weight: bold;
+        font-size: 7em;
+        width: 30vw;
+        height: 15vh;
+        font-size: 5.5vw;
+    }
+
+    .content .inner-content .text .proj-desc{
+        font-size: 4vw;
+    }
+}
+
 
