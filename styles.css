@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
   
 body {
     font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     line-height: 1.6;
-    /* overflow: hidden; */
 }
   
 .containerz {
@@ -101,8 +103,96 @@ section#about {
     background-color: white;
 }
 
-  
-section#contact {
+section#projects{
     background-color: #f0f0f0;
 }
+
   
+section#contact {
+    background-color: white;
+}
+  
+
+/* Project Section */
+
+#project-head{
+    margin-bottom: 10%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+}
+
+.container .cards{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .cards .inner-card{
+    color: red;
+    position: relative;
+    width: calc(50% - 40px);
+    margin: 0 30px 30px 0;
+    padding: 0 25px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4ox;
+    transition: .5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.container .cards .inner-card.active{
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+.container .cards .inner-card .project-name{
+    max-width: 100%;
+    filter: grayscale(1);
+    transition: .5s;
+    transform: scale(0.8);
+}
+
+.container .cards .inner-card.active .project-name{
+    filter: grayscale(0);
+    transform: scale(1);
+}
+
+
+.content{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.content .inner-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.content .inner-content.active{
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.2s
+}
+
+.content .inner-content h2{
+    font-size: 3em;
+}
+
