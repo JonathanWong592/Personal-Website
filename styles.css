@@ -51,7 +51,7 @@ body {
 }
   
 .navbar ul li a:hover {
-    color: skyblue;
+    color: #FF8552;
 }
   
 section {
@@ -114,6 +114,10 @@ section#contact {
     background-color: white;
 }
 
+a{
+    color: #FF8552;
+}
+
 
   
 
@@ -141,7 +145,7 @@ section#contact {
 }
 
 .container .cards .inner-card{
-    color: red;
+    color: #FF8552;
     position: relative;
     /* width: calc(50% - 40px); */
     width: 50%;
@@ -224,7 +228,7 @@ section#contact {
     #intro, .lead {
         margin-right: 0rem;
         margin-left: 0rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .navbar ul li {
@@ -247,30 +251,30 @@ section#contact {
     }
 
     .container .cards .inner-card .project-name{
-        font-size: 4.5vw;
+        font-size: 4.3vw;
     }
 
-    .content .inner-content.active{
-        font-size: 8vw;
-        width: 30vw;
-        /* padding-right: 125px; */
+
+
+    .content .inner-content{
+        padding-right: 5px;
         height: 100%;
     }
     .content .inner-content .text .proj-header{
         font-weight: bold;
-        font-size: 7em;
-        height: 15vh;
         font-size: 5.5vw;
-        text-align: center;
-        align-items: center;
     }
 
     .content .inner-content .text .proj-desc{
         font-size: 3.5vw;
     }
     .page-header{
-        /* margin-top: 3vh; */
         font-size: 2em;
+    }
+
+    .readMore{
+        font-size: small;
+
     }
 }
 
