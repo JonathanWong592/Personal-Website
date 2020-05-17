@@ -73,6 +73,8 @@ h2{
 }
 
 #intro, .lead {
+    margin-right: 10rem;
+    margin-left: 10rem;
     font-size: 1.2rem;
 }
   
@@ -218,6 +220,21 @@ section#contact {
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
+
+    #intro, .lead {
+        margin-right: 0rem;
+        margin-left: 0rem;
+        font-size: 1.2rem;
+    }
+
+    .navbar ul li {
+        margin: 0 .1rem;
+        padding-top: .9rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        /* padding: .8rem; */
+        font-size: small;
+    }
 
     .container .cards{
         width: 45%;
