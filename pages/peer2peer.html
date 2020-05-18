@@ -29,11 +29,36 @@
 
     <div class="projDescription">
         <h3>About:</h3>
-        <span>Peer2Peer is a web application I built using the MERN stack, along with other JavaScript libraries. Throughout this project,
+        <h3><span>Peer2Peer is a web application I built using the MERN stack, along with other JavaScript libraries. Throughout this project,
               I learned more about authentication and authorization through the use of JSON Web Tokens, hashing passwords, and storing them safely
               within a secure database which was hosted online using MongoDB Atlas. The application allows for real time message sending automatically
               updating on the client's screen allowing for a seamless user experience which was integrated with Socket.IO and CRUD methods.
-        </span>
-
+        </span></h3>
     </div>
+
+    <div class="projTasks">
+        <h3 id="tasks">Tasks:</h3>
+        <h3>1) <span>I implemented authentication and authorization using the latest techniques and best practices. I used JSON Web tokens to keep track
+                    of who was logged in at the time along with a select amount of information I stored within the payload of the token. I hashed each
+                    of the user's password and stored it safely within a MongoDB collection pertaining to that specific user. When authorizing specific
+                    users to perform a task, I utilized my middleware implementation to verify that the user was granted access through web tokens and local storage.  
+        </span></h3>
+
+        <h3>2) <span>I made use of Socket.IO to easily allow users to communicate with eachother in real time. I added features to let users create their own
+                     private rooms or join other users' rooms. All of this was displayed on the dashboard which made use of React's front end framework allowing
+                     for seamless integration of Socket's on the front and back end. As shown in the picture, there are designated columns to display important 
+                     features such as showing the user's rooms, the other user's within a channel, or creating a room. 
+        </span></h3>
+
+        <h3>3) <span>One feature that I am in the works of completing is the use of Darksky's API in which user's can call to display their profile on a map, along
+                    with weather specific details of their location. My idea is to display every user in the channel's profile on the world map, and update it everytime 
+                    a user clicks on the 'Location!' button in the chat box. 
+        </span></h3>
+
+        <h3>4) <span>State management proved to be a bit tricky at first as I was learning about React and all of its capabilities as a front end framework. I ended up 
+                    implementing Redux to easily transfer data between specific pages within my application. This was important because it allowed me to understand how
+                    data flowed within an application, whether that be to lower or higher components.  
+        </span></h3>
+    </div>
+
 </section>
