@@ -22,6 +22,7 @@ body {
 }
 
 .navbar {
+    
     position: fixed;
     text-align: center;
     top: 0;
@@ -202,17 +203,11 @@ a{
     transition-delay: 0.2s
 }
 
-/* .text{
-    margin-right: 3vw;
-    margin-left: -5vw;
-} */
 
 .content .inner-content .text .proj-header{
     font-size: x-large;
     align-items: center;
     font-weight: bold;
-    /* width: 30vw; */
-
     height: 10vh;
     text-align: center;
 }
@@ -231,6 +226,10 @@ a{
         font-size: 1rem;
     }
 
+    #home h2, p{
+        width: 90%;
+    }
+
     .navbar ul li {
         margin: 0 .1rem;
         padding-top: .9rem;
@@ -244,16 +243,15 @@ a{
         width: 45%;
     }
 
-    .content{
+    /* .content{
         position: relative;
         width: 55%;
         overflow: hidden;
-    }
+    } */
 
     .container .cards .inner-card .project-name{
         font-size: 4.3vw;
     }
-
 
 
     .content .inner-content{
