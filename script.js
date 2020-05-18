@@ -34,3 +34,7 @@ for(var i = 0; i < innerCard.length; i++){
 const scroll = new SmoothScroll('.navbar a[href*="#"]', {
 	speed: 700
 });
+
+$('#projects').click(function(e) {
+    e.preventDefault();
+});
