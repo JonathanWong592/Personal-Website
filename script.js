@@ -35,6 +35,6 @@ const scroll = new SmoothScroll('.navbar a[href*="#"]', {
 	speed: 700
 });
 
-$('#projects').click(function(e) {
-    e.preventDefault();
-});
+// $('#projects').click(function(e) {
+//     e.preventDefault();
+// });
