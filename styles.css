@@ -230,12 +230,16 @@ a{
         width: 90%;
     }
 
+    .navbar {
+        position: fixed;
+        background: rgba(0,0,0,0.7);
+    }
+
     .navbar ul li {
         margin: 0 .1rem;
         padding-top: .9rem;
         padding-left: .5rem;
         padding-right: .5rem;
-        /* padding: .8rem; */
         font-size: small;
     }
 
