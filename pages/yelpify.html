@@ -18,7 +18,7 @@
 </article>
 <section class="projText">
     <div class="spacer"></div>
-    <h1>Data Lake & Analytics Undergraduate Research</h1>
+    <h1>Yelp Machine Learning Web Application</h1>
 
     <img src="../logos/Research.JPG" alt="">
 
@@ -32,7 +32,7 @@
     <div class="projDescription">
         <h3>About: </h3>
         <h3><span>
-            Yelpify is a machine learning web application with a react frontend and a flask backend. I made use of a 
+            Yelpify is a machine learning web application built with a react frontend and a flask backend. I made use of a 
             linear regression model to accurately predict a restaurant's "yelp rating" based off of user input including 
             review count, average review length, and average review age. After completing the application, I dockerized
             the application by creating two Dockerfiles to create images for the frontend and backend, which would then
@@ -42,22 +42,20 @@
 
     <div class="projTasks">
         <h3 id="tasks">Tasks:</h3>
-        <h3>1) <span>Used textpreprocessing techniques and the levenshtein distance algorithm to determine if a given Instagram profile was a business or an influencer.
-                    I utilized Nasdaq's company CSV file to find a relationship between the companies in the Nasdaq file and our scraped Instagram data. Each result
-                    was either labeled as 0 or 1 and is to be used for future machine learning purposes, to make it easier to identify an Instagram business or influencer. 
+        <h3>1) <span>I created a linear regression model to predict Yelp ratings based off of data provided by Codecademy including business, photo, 
+                    review, and user data. The model had a score of 83% based off of the features I tested with, which includes review count, average 
+                    review length, and average review age. I saved the model to disk using joblib and is able to process input from the user accessing
+                    the frontend, and output a result.  
         </span></h3>
 
-        <h3>2) <span>Created an algorithm to efficiently download images stored on Crunchbase's server, and uniquely identify each one with a UUID
-                     which was saved in a designated folder on our server. I used Pandas to easily query through a large CSV file to identify image links
-                     which I then used to download these images using the request library.
+        <h3>2) <span>I used docker to package my application making it easier for myself and other developers to deploy it 
+                    without a problem. I created two docker images, one for the React frontend, and the other for the flask backend.
+                    Both images were simulatenously launched by a docker compose file which hleped streamline the deployment process. 
         </span></h3>
 
-        <h3>3) <span>Queried through a large Kickstarter dataset to find founder and company information necessary to discover relationships in
-                    our Crunchbase dataset using the pandas library. This task involved querying through a MongoDB collection and finding the most important 
-                    characteristics and features of a business and its founders alike.</span></h3>
-
-        <h3>4) <span>Connected to MongoDB and extracted twitter specific information from a Crunchbase specific collection. I used string manipulation to extract the 
-                    twitter user id from a user's profile URL which I then saved with a UUID (universally unique identifier) used to idenitfy a each specific user 
-                    within the crunchbase collection.</span></h3>
+        <h3>3) <span>The application is built off of an open source react and flask template paving the way for a more explicit implementation of my app.
+                    I was able to clearly visualize the workings of how React and Flask communicated with eachother and send data back and forth with
+                    the use of Flask-RESTPLUS. Knowing this, I modified the template to my liking and personzlied the apperance with a more Yelp app vibe.
+        </span></h3>
     </div>
 </section>
