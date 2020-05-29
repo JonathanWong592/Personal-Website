@@ -1,0 +1,64 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pages.css">
+    <title>Jonathan Wong - Research</title>
+    <link rel="icon" href="/logos/favicon.ico">
+</head>
+<article>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../Jonathan Wong Resume Official.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+</article>
+<section class="projText">
+    <div class="spacer"></div>
+    <h1>Data Lake & Analytics Undergraduate Research</h1>
+
+    <img src="../logos/Research.JPG" alt="">
+
+    <div class="quickFacts">
+        <h3>Role: <span>Researcher & Developer</span></h3>
+        <h3>Team: <span>Computer Science & Business Majors</span></h3>
+        <h3>Timeline: <span>September 2019 - May 2020</span></h3>
+        <h3>Technologies: <span>Python, Jupyter Notebook, Pandas, BeautifulSoup, FuzzyWuzzy</span></h3>
+    </div>
+
+    <div class="projDescription">
+        <h3>About: </h3>
+        <h3><span>
+            As an undergraduate researcher for the Severino Center for Technological Entrepreneurship, 
+            I collaborated with computer science and business majors to gather and analyze social media 
+            and business related data in an efficient manner. I developed Python scripts and utilized data 
+            science libraries to efficiently extract, parse, and analyze relevant data from large datasets, 
+            and saved them within our database directory. I attended weekly team meetings to address problems, 
+            updates, or solutions, and kept note of tasks to be completed for the following week.
+        </span></h3>
+    </div>
+
+    <div class="projTasks">
+        <h3 id="tasks">Tasks:</h3>
+        <h3>1) <span>Used textpreprocessing techniques and the levenshtein distance algorithm to determine if a given Instagram profile was a business or an influencer.
+                    I utilized Nasdaq's company CSV file to find a relationship between the companies in the Nasdaq file and our scraped Instagram data. Each result
+                    was either labeled as 0 or 1 and is to be used for future machine learning purposes, to make it easier to identify an Instagram business or influencer. 
+        </span></h3>
+
+        <h3>2) <span>Created an algorithm to efficiently download images stored on Crunchbase's server, and uniquely identify each one with a UUID
+                     which was saved in a designated folder on our server. I used Pandas to easily query through a large CSV file to identify image links
+                     which I then used to download these images using the request library.
+        </span></h3>
+
+        <h3>3) <span>Queried through a large Kickstarter dataset to find founder and company information necessary to discover relationships in
+                    our Crunchbase dataset using the pandas library. This task involved querying through a MongoDB collection and finding the most important 
+                    characteristics and features of a business and its founders alike.</span></h3>
+
+        <h3>4) <span>Connected to MongoDB and extracted twitter specific information from a Crunchbase specific collection. I used string manipulation to extract the 
+                    twitter user id from a user's profile URL which I then saved with a UUID (universally unique identifier) used to idenitfy a each specific user 
+                    within the crunchbase collection.</span></h3>
+    </div>
+</section>
