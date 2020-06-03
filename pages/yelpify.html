@@ -1,0 +1,61 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pages.css">
+    <title>Jonathan Wong - Yelpify</title>
+    <link rel="icon" href="/logos/favicon.ico">
+</head>
+<article>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../Jonathan Wong Resume Official.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+</article>
+<section class="projText">
+    <div class="spacer"></div>
+    <h1>Yelp Machine Learning Web Application</h1>
+
+    <img src="../logos/Yelpify.JPG" alt="">
+
+    <div class="quickFacts">
+        <h3>Role: <span>Developer</span></h3>
+        <h3>Team: <span>Solo</span></h3>
+        <h3>Timeline: <span>April 2020 - June 2020</span></h3>
+        <h3>Technologies: <span>Flask, React, Scikit-learn, Docker, Flask-RESTPLUS, Pandas, Numpy, Bootstrap</span></h3>
+    </div>
+
+    <div class="projDescription">
+        <h3>About: </h3>
+        <h3><span>
+            Yelpify is a machine learning web application built with a react frontend and a flask backend. I made use of a 
+            linear regression model to accurately predict a restaurant's "yelp rating" based off of user input including 
+            review count, average review length, and average review age. After completing the application, I dockerized
+            the application by creating two Dockerfiles to create images for the frontend and backend, which would then
+            be served using Docker Compose. More can be found out here, https://github.com/JonathanWong592/ML-Docker
+        </span></h3>
+    </div>
+
+    <div class="projTasks">
+        <h3 id="tasks">Tasks:</h3>
+        <h3>1) <span>I created a linear regression model to predict Yelp ratings based off of data provided by Codecademy including business, photo, 
+                    review, and user data. The model had a score of 83% based off of the features I tested with, which includes review count, average 
+                    review length, and average review age. I saved the model to disk using joblib and is able to process input from the user accessing
+                    the frontend, and output a result.  
+        </span></h3>
+
+        <h3>2) <span>I used docker to package my application making it easier for myself and other developers to deploy it 
+                    without a problem. I created two docker images, one for the React frontend, and the other for the flask backend.
+                    Both images were simulatenously launched by a docker compose file which hleped streamline the deployment process. 
+        </span></h3>
+
+        <h3>3) <span>The application is built off of an open source react and flask template paving the way for a more explicit implementation of my app.
+                    I was able to clearly visualize the workings of how React and Flask communicated with eachother and send data back and forth with
+                    the use of Flask-RESTPLUS. Knowing this, I modified the template to my liking and personzlied the apperance with a more Yelp app vibe.
+        </span></h3>
+    </div>
+</section>
